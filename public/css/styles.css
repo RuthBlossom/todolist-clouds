@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+body {
+  /* Light blue for sky */
+  /* Replace with a cloud image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/clouds.jpg');
+  background-color: #b6d0e2;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'helvetica neue', serif;
+
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#heading {
+  background-color: #6c5b7b; /* Lighter blue for header */
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d7d7d7;
+  backdrop-filter: blur(10px); /* Apply blur for glassy effect */
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+
+
+/* Existing CSS styles... */
+
+/* Existing CSS styles... */
+
+input[type="checkbox"] {
+  margin: 20px;
+  transform: scale(1.2);
+  -webkit-appearance: none;
+  border: 2px solid #a4c3e5;
+  border-radius: 50%; /* Make the checkbox round */
+  width: 20px;
+  height: 20px;
+  transition: border 0.3s ease, background 0.3s ease; /* Add transition for smooth effect */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "\2713"; /* Unicode for checkmark */
+  color: #fff; /* White color for the tick */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+input[type="checkbox"]:checked::before {
+  opacity: 1; /* Show checkmark when checked */
+}
+
+input[type="checkbox"]:hover {
+  background-color: #856f8d; /* Purple color on hover */
+  border: 2px solid #856f8d; /* Purple border on hover */
+}
+
+/* Existing CSS styles... */
+
+
+/* Existing CSS styles... */
+
+
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+
+
+form.item label {
+  display: block; /* Make labels display as block elements */
+  font-size: 20px; /* Adjust font size */
+  color: #00204a; /* Text color */
+  margin-bottom: 5px; /* Add some space between labels and inputs */
+  border-radius: 16px;
+}
+
+form.item input[type="text"] {
+  text-align: center; /* Center-align text */
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  border-radius: 16px;
+  font-size: 20px; /* Adjust font size */
+  font-weight: 200;
+  width: 313px;
+
+  margin-bottom: 20px; /* Add some space between inputs */
+}
+
+form.item input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #add8e6; /* Purple border on focus */
+
+}
+
+
+button {
+  cursor: pointer;
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color:  #add8e6; /* Light purple */
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  transition: transform 0.3s ease; /* Add transition for smoother animation */
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Increased text shadow on hover */
+  transform: scale(1.05);
+  animation: cloudAnimation 0.5s infinite alternate; /* Apply the animation on hover */
+}
+
+
+@keyframes cloudAnimation {
+  0% {
+    transform: translateY(0); /* Start at normal position */
+  }
+  100% {
+    transform: translateY(-5px); /* Move up by 5 pixels */
+  }
+}
+
+
+
+
+button:hover {
+  background-color: #856f8d; /* Lighter yellow on hover */
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+  border-radius: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 #d0d9e2;
+}
+
+::placeholder {
+  color:  #6d7f9f;; /* Light grey for placeholder text */
+  opacity: 1;
+  border-radius: 16px;
+}
+
+
+
+
+
+
+body {
+  /* Your existing styles for the body element */
+}
+
+.cloud-footer {
+  background-color: #6d5b72; /* Grey color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Set the height of the footer */
+  width: 100%;
+  position: fixed;
+  bottom: 0; /* Position it at the bottom of the viewport */
+}
+
+.cloud-text {
+  font-family: 'Coiny', cursive;
+  font-size: 100px; /* Adjust font size */
+  -webkit-background-clip: text;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg');
+  background-size: auto;
+  background-attachment: unset;
+  background-position: 0%;
+  width: 80%;
+  margin: 10%;
+  animation: clouds-moving infinite 60s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  -webkit-text-fill-color: transparent; /* Transparent text */
+}
+
+.cloud-text-content {
+  margin: 0;
+}
+
+
+@keyframes clouds-moving {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+/* Add this to your CSS stylesheet */
+
+.cloud-heading {
+  font-size: 3em; /* Set your desired font size for "Today" */
+  text-shadow: none; /* Remove text shadow */
+  -webkit-background-clip: text;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg');
+  background-size: auto;
+  background-attachment: unset;
+  background-position: 0%;
+  width: 80%;
+  margin: 10%;
+  animation: clouds-moving infinite 60s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  -webkit-text-fill-color: transparent; /* Transparent text */
+}
+
+
+
+
+
+
+@keyframes clouds-moving {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+
+
+
+
+
